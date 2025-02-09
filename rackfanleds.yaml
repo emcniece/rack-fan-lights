@@ -39,7 +39,7 @@ captive_portal:
 i2c:
   #sda: GPIOXX # default: 42 GPIO21
   #scl: GPIOXX # default: 39 GPIO22
-  scan: false
+  scan: true
   id: bus_a
 
 sensor:
@@ -71,7 +71,7 @@ sensor:
 
 output:
   - platform: ledc
-    pin: GPIO9
+    pin: GPIO16
     frequency: 10000 Hz
     id: fanhub_pwm0
   - platform: ledc
